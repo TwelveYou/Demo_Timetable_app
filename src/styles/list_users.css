@@ -1,0 +1,78 @@
+.list-users{
+    color: white;
+    width: 80%;
+    border-top: 2px solid gray;
+}
+
+.list-users__list{
+    height: 65vh;
+    overflow: auto; 
+}
+
+
+
+.list-users__heading{
+    font-size: 18pt;
+    font-family: Roboto_bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.button{
+    background-color: #0C343D;  
+    color: white;
+    border: 1px solid gray;  
+    width: 22%;
+    min-width: 170px;
+    height: 40px;
+    font-size: 14pt;
+    border-radius: 3px;
+    margin:20px;
+}
+
+.button:hover{
+    background-color: rgb(18, 98, 100);    
+    border: 1px solid white;    
+}
+
+.button:active{
+    background-color: #134F5C; 
+  
+}
+
+.list-users__buttons, .text-align-center{
+    text-align: center;
+}
+
+
+/* ПОЛЬЗОВАТЕЛИ-------------------------------------------------------- */
+.list-users__user{
+    background-color: white;  
+    color: black;
+    border: 1px solid gray;  
+    min-width: 170px;
+    height: 40px;
+    font-size: 14pt;
+    /* border-radius: 3px; */
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.list-users__user:hover{
+    background-color: #a9e8e9;    
+    border: 1px solid white;    
+}
+
+.list-users__user:active{
+    background-color: #51dfff; 
+  
+}
+
+.list-users__user-active-true{
+    background-color: black;  
+    color:white;
+    font-family: Roboto_bold;
+}
+.list-users__user-active-true:hover{
+    background-color: #03171b;  
+}

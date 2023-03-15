@@ -1,0 +1,80 @@
+/* *{
+    font-size: 18pt;
+} */
+
+.board__show-board{
+    font-size: 18pt;
+}
+
+th{
+    padding:10px;
+}
+
+.board-doctor__cabinet{
+    font-family: Roboto_bold;   
+    color: #FFD966; 
+}
+
+.board-doctor__doctor-info-name{
+    font-size: 1.2em;
+}
+
+.board-doctor__station{
+    font-family: Roboto_italic;      
+}
+
+.board-doctor__station-symbol{
+    font-family: Roboto_light_italic;
+    font-weight: lighter;
+}
+
+.board-doctor__doctor-info-speciality{
+    font-family: Roboto_light_italic;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.board{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.board-heading{
+    height: 100px;
+}
+
+tr{
+    background-color: #0C343D;   
+}
+
+tr:nth-child(even){
+    background-color: #134F5C;    
+}
+
+.board-window{
+    background-color: #0C343D;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    /* text-align: center;
+    display: inline-block; */
+}
+
+.board-window__message{
+    color: white;
+    font-size: 42pt;
+    font-family: Roboto_bold;
+    text-align: center;
+
+    padding: 10%;
+
+    margin: auto;
+
+    /* line-height: normal;
+    display: inline-block;
+    vertical-align: middle; */
+
+}

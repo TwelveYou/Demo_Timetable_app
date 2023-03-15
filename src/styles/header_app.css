@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+
+/* .App-Header{
+    height: 75px;
+} */
+
+.App-Header-menu, .App-Header-menu-UserField{
+    display: flex;
+    align-items: center;
+}
+
+.App-Header-menu{
+    background-color: #0C343D; 
+    color: white;
+    min-height: 75px;
+}
+
+.App-Header-menu-LogoApp{
+    margin-right: auto;
+    padding-left: 20px;
+    /* padding: 18px; */
+}
+
+.App-Header-menu-LogoApp__AppName {
+    font-family: Roboto_bold; 
+    font-size: 18pt;
+}
+
+.App-Header-menu-LogoApp__AppInfo{
+    font-family: Roboto_light_italic; 
+    font-size: 14pt;    
+}
+
+.App-Header-menu-UserField{
+    align-items: center;
+    justify-content: center;
+}
+
+.App-Header-menu-UserField__HiMessage {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.App-Header-menu-UserField__LogoutButton{
+    background-color: #134F5C;  
+    color: white;
+    border: 1px solid gray;  
+    width: 100px;
+    height: 34px;
+    font-size: 12pt;
+    border-radius: 3px;
+    margin-right: 25px;
+}
+
+.App-Header-menu-UserField__LogoutButton:hover{
+    background-color: #116062;    
+    border: 1px solid white;    
+}
+
+.App-Header-menu-UserField__LogoutButton:active{
+    background-color: #0C343D; 
+  
+}
+
+
+.App-Header__message-info {
+    text-align: center;  
+    background-color: #dbdbdb;
+    color: #0C343D;
+    font-family: Roboto_bold; 
+    height: 19px;
+}

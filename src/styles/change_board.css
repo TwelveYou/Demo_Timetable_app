@@ -1,0 +1,118 @@
+/* Изменение табло ======================================= */
+
+table, tr, th {
+    border: 1px solid white;
+    border-collapse: separate;
+    border-spacing: 0;
+ }
+
+tr{
+    background-color: #0C343D;   
+}
+
+tr:nth-child(even){
+    background-color: #134F5C;  
+}
+
+.change-board-heading{
+    position: sticky;
+    top: 0;
+}
+
+/* -------------------------------------- ХЗ -------------------------------------- */
+/* .change-board-heading .change-board-heading__doctor-info .change-board-heading__station .change-board-heading__cabinet .change-board-heading__workday .change-board-heading__workday .change-board-heading__workday .change-board-heading__workday .change-board-heading__workday {
+    position: sticky;
+    top: 0;
+        border: 1px solid white;
+    border-collapse: collapse;
+} */
+
+.edit-doctor, .edit-doctor input, .edit-doctor select{
+    font-size: 14pt;
+}
+
+.changing-board{
+    width: 100%;
+    overflow: auto;    
+}
+
+/* .changing-board-table{
+    width: 100%;
+    overflow: auto;
+} */
+
+.changing-board-table{
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+.change-board-doctor__doctor{
+    display: flex;
+}
+
+.change-board-doctor__doctor-info{
+    margin:auto;
+}
+
+.change-board-doctor__doctor-buttons{
+    display:flex;
+    align-items: center;
+}
+
+.change-board-doctor__doctor-buttons-dragndrop:hover, .change-board-doctor__doctor-buttons-edit:hover {
+    background-color: #116062;  
+    border: 1px solid gray;  
+    height: 28px;
+    border-radius: 3px;
+}
+
+.change-board-doctor__doctor-buttons-dragndrop:active, .change-board-doctor__doctor-buttons-edit:active {
+    background-color: #0C343D; 
+    border: 1px solid white;  
+    border-radius: 3px;
+    height: 28px;
+}
+
+.change-board__add-record{
+    height: 28px;
+
+    /* overflow: auto;  */
+}
+
+.change-board__no-doctors{
+    height: 28px;
+}
+
+.change-board-doctor_error_overscale{
+    background-color: rgb(155, 8, 8);
+}
+
+/* .change-board__add-record{
+    position: sticky;
+    bottom: 50px;
+} */
+
+.change-board__add-record:hover {
+    background-color: #b7bec0;
+    color:#0C343D;
+    border-color: white;
+}
+
+.change-board__add-record:active {
+    background-color: #0C343D;
+    color:white;
+    /* border-color: #; */
+}
+
+.big_size{
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Roboto_bold;
+}
+
+.change-board-doctor__when_dnd_under{
+    background-color: white;
+    color:black
+}

@@ -1,0 +1,528 @@
+@font-face {
+    font-family: "Roboto"; 
+    src: url("res/font_roboto/Roboto-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+@font-face {
+    font-family: "Roboto_bold"; 
+    src: url("res/font_roboto/Roboto-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }   
+    
+@font-face {
+    font-family: "Roboto_light_italic"; 
+    src: url("res/font_roboto/Roboto-LightItalic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+    
+@font-face {
+    font-family: "Roboto_italic"; 
+    src: url("res/font_roboto/Roboto-Italic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }           
+
+body{
+    margin:0;
+    font-family: Roboto;
+    min-height: 100vh;
+    background-color: #dbdbdb;
+}
+
+#root{
+    min-height: 100vh;
+}
+
+/* Табло */
+
+.board-doctor__cabinet{
+    font-family: Roboto_bold;   
+    color: #FFD966; 
+}
+
+.board-doctor__doctor-info-name{
+    font-size: 1.2em;
+}
+
+.board-doctor__station{
+    font-family: Roboto_italic;      
+}
+
+.board-doctor__station-symbol{
+    font-family: Roboto_light_italic;
+    font-weight: lighter;
+}
+
+.board-doctor__doctor-info-speciality{
+    font-family: Roboto_light_italic;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.board{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.board-heading{
+    height: 100px;
+}
+
+tr{
+    background-color: #0C343D;   
+}
+
+tr:nth-child(even){
+    background-color: #134F5C;    
+}
+
+/* Логин ====================================*/
+
+.login{
+    background-color: #0C343D;  
+    color: white;
+    width: 380px;
+    text-align: center;
+    
+    /* vertical-align: middle; */
+    
+    margin: auto 0;
+    position: absolute;
+    top:50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.login-heading{
+    margin: 0;
+    padding: 40px;
+    font-family: Roboto_bold;
+}
+
+.login__button-enter{
+    background-color: #134F5C;  
+    color: white;
+    border: 1px solid gray;  
+    width: 300px;
+    height: 40px;
+    font-size: 14pt;
+    /* border:none; */
+    border-radius: 3px;
+    /* margin-bottom: 40px; */
+}
+
+.login__button-enter:hover{
+    background-color: #116062;    
+    border: 1px solid white;    
+}
+
+.login__button-enter:active{
+    background-color: #0C343D; 
+  
+}
+
+.login-password__input, .login-username__input{
+    width: 292px;
+    height: 34px;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    font-size: 14pt;
+}
+
+.login-password__label, .login-username__label{
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.login__result-login-message{
+    height: 70px;    
+    width: 320px;
+    margin: 5px auto;
+}
+
+/* Доска оператора ====================================*/
+.board-operator-header{
+    background-color: #0C343D;
+    color: white;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.board-operator-header-user-setting{
+    margin-left: auto;
+    display: flex;
+}
+
+.board-operator-header__select-tablo{
+    width: 70vw;
+    height: 30px;
+}
+
+.board-operator-header__hi-user{
+    margin: 5px 10px 5px auto;
+    text-align: center;
+}
+
+.change-board-heading{
+    background-color: #0C343D; 
+    color: white;
+}
+
+.board-operator-header__logot-button{
+    height: 32px;
+    background-color: #134F5C;  
+    color: white;
+    border: 1px solid gray;     
+    font-size: 13pt;
+    border-radius: 3px;
+
+}
+
+.board-operator-header__logot-button:hover{
+    background-color: #116062;   
+    border: 1px solid white;    
+}
+
+.board-operator-header__logot-button:active{
+    background-color: #0C343D; 
+    border: 1px solid white;     
+}
+
+/* Изменение табло ======================================= */
+
+.edit-doctor, .edit-doctor input, .edit-doctor select{
+    font-size: 13pt;
+}
+
+.changing-board{
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+.change-board-doctor__doctor{
+    display: flex;
+}
+
+.change-board-doctor__doctor-info{
+    margin:auto;
+}
+
+.change-board-doctor__doctor-buttons{
+    display:flex;
+    align-items: center;
+}
+
+.change-board-doctor__doctor-buttons-dragndrop:hover, .change-board-doctor__doctor-buttons-edit:hover {
+    background-color: #116062;  
+    border: 1px solid gray;  
+    height: 28px;
+    border-radius: 3px;
+}
+
+.change-board-doctor__doctor-buttons-dragndrop:active, .change-board-doctor__doctor-buttons-edit:active {
+    background-color: #0C343D; 
+    border: 1px solid white;  
+    border-radius: 3px;
+    height: 28px;
+}
+
+/* Изменение доктора ======================================= */
+.edit-doctor{
+    background-color: #0C343D; 
+    color: white;
+    width: 700px;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+}
+
+.edit-doctor-darker_font{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 70%;
+    position: absolute;
+    top: 0;
+}
+
+
+
+/* Шапка окна */
+.edit-doctor__heading{
+    margin:0;
+    background-color: #116062;  
+    font-size: 14pt;
+    margin-bottom: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+
+/* -флекс- */
+.edit-doctor__fio-edit, .edit-doctor__work-info, .edit-doctor__work-info-about-doctor-station-and-cabinet, .edit-doctor__work-info-work-week-day{
+    display: flex;
+}
+
+/* ФИО */
+.edit-doctor__fio-edit {
+    margin: 15px 45px 45px;
+}
+
+.edit-doctor__fio-edit-surname-label, .edit-doctor__fio-edit-name-label, .edit-doctor__fio-edit-lastname-label{
+    margin: 0;
+}
+
+.edit-doctor__fio-edit-surname-input, .edit-doctor__fio-edit-name-input, .edit-doctor__fio-edit-lastname-input{
+    width: 190px;
+}
+
+.edit-doctor__fio-edit-surname, .edit-doctor__fio-edit-name{
+    margin-right: auto;
+}
+
+/* информация о работе доктора */
+.edit-doctor__work-info{
+    margin: 15px 45px    
+}
+
+/* Левый столбец (Дни недели) */
+.edit-doctor__work-info-work-week-day-name{
+    margin:0;
+}
+
+.edit-doctor__work-info-work-week-day{
+    margin-bottom: 20px;
+}
+
+.edit-doctor__work-info-work-week-day:last-child{
+    margin-bottom: 0;
+}
+
+.edit-doctor__work-info-work-week-day-dash{
+    margin:0 7px;    
+}
+
+.edit-doctor__work-info-work-week-day-start, .edit-doctor__work-info-work-week-day-finish{
+    width: 60px;
+}
+
+.edit-doctor__work-info-work-week-day-name{
+    width: 40px;    
+}
+
+.edit-doctor__work-info-work-week-day-not-work{
+    width: 147px;
+}
+
+.edit-doctor__work-info-work-week-day-name, .edit-doctor__work-info-work-week-day-dash{
+    display: flex;
+    align-items: center;
+}
+
+.edit-doctor__work-info-work-week{
+    margin-right: auto;
+}
+
+.edit-doctor__work-info-work-week-day-is-work{
+    height: 21px;
+}
+
+/* Правый столбец */
+.edit-doctor__work-info-about-doctor-birthday-label, .edit-doctor__work-info-about-doctor-speciality-label, .edit-doctor__work-info-about-doctor-station-and-cabinet-cabinet-label, .edit-doctor__work-info-about-doctor-station-and-cabinet-station-label, .edit-doctor__work-info-about-doctor-department-label{
+    margin:0;
+}
+
+.edit-doctor__work-info-about-doctor-birthday{
+    font-family: Roboto;
+}
+
+.edit-doctor__work-info-about-doctor-speciality-name, .edit-doctor__work-info-about-doctor-birthday-date{
+    width: 280px;
+}
+
+.edit-doctor__work-info-about-doctor-station-and-cabinet-cabinet-number, .edit-doctor__work-info-about-doctor-station-and-cabinet-station-name{
+    width: 50px;    
+}
+
+.edit-doctor__work-info-about-doctor-station-and-cabinet-cabinet{
+    margin-right: auto;
+}
+
+.edit-doctor__work-info-about-doctor-birthday, .edit-doctor__work-info-about-doctor-speciality, .edit-doctor__work-info-about-doctor-station-and-cabinet{
+    margin-bottom: 9px;
+}
+
+/* кнопки */
+.edit-doctor__button-save{
+    background-color: #134F5C;  
+    color: white;
+    border: 1px solid gray;  
+    width: 300px;
+    height: 40px;
+    font-size: 14pt;
+    border-radius: 3px;
+
+    display: block;
+    margin: 15px auto;
+}
+
+.edit-doctor__button-close{
+    background-color: #134F5C;  
+    color: white;
+    border: 1px solid gray;  
+    font-size: 14pt;
+    border-radius: 3px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+}
+
+.edit-doctor__button-save:hover, .edit-doctor__button-close:hover{
+    background-color: #116062;   
+    border: 1px solid white;    
+}
+
+.edit-doctor__button-save:active, .edit-doctor__button-close:active{
+    background-color: #0C343D; 
+    border: 1px solid white;     
+}
+
+/* Админка ====================================*/
+
+.admin-header{
+    background-color: #0C343D;
+    color: white;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.admin-header__hi-message{
+    margin-right: auto;
+}
+
+.admin-header__logot-button{
+    height: 32px;
+    background-color: #134F5C;
+    color: white;
+    border: 1px solid gray;
+    font-size: 13pt;
+    border-radius: 3px;
+}
+
+.admin-control__boards-header-button-add, .admin-control__users-header-button-add{
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+.admin-header__logot-button:hover{
+    background-color: #116062;   
+    border: 1px solid white;    
+}
+
+.admin-header__logot-button:active{
+    background-color: #0C343D; 
+    border: 1px solid white;     
+}
+
+/* .admin-control{
+    display: flex;
+} */
+
+.admin{
+    height: 100vh;
+}
+
+.admin-control{
+    display: flex;
+    padding: 0 70px;
+    background-color: #134F5C;
+    color: white;
+    font-size: 14pt;
+    height: calc(100% - 50px);
+}
+
+.admin-control__boards-label, .admin-control__users-label{
+    margin:0;
+}
+
+.admin-control__users{
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.admin-control__boards{
+    margin-right: auto;
+}
+
+.admin-control__users-list, .admin-control__boards-list{
+    width: 300px;
+    height: 300px;
+    font-size: 14pt;
+}
+
+.admin-control__users, .admin-control__boards{
+    padding: 30px 0;
+}
+
+.admin-control__boards-label, .admin-control__boards-list, .admin-control__boards-edit-user,
+.admin-control__users-label, .admin-control__users-list, .admin-control__users-edit-user{
+    margin-bottom: 10px;
+}
+
+
+/* .admin-control__boards, .admin-control__users{
+    background-color: #0C343D; 
+    color: white;
+} */
+
+.admin-control__boards-buttons, .admin-control__users-buttons{
+    display: flex;
+}
+
+.admin-control__users-buttons-edit-user, .admin-control__users-delete-user, .admin-control__boards-buttons-edit-board, .admin-control__boards-buttons-delete-board{
+    display: block;
+}
+
+.admin-control__boards-buttons-edit-board, .admin-control__users-buttons-edit-user{
+    margin-right: auto;
+}
+
+
+/* кнопки */
+
+.admin-control__boards-header-button-add, .admin-control__users-header-button-add, .admin-control__boards-buttons-edit-board, .admin-control__boards-buttons-delete-board, .admin-control__users-buttons-edit-user, .admin-control__users-buttons-delete-user{
+    /* background-color: #134F5C;   */
+    background-color: #0C343D;
+    color: white;
+    border: 1px solid gray;  
+    font-size: 14pt;
+    border-radius: 3px; 
+}
+
+.admin-control__boards-header-button-add:hover, .admin-control__users-header-button-add:hover, .admin-control__boards-buttons-edit-board:hover, .admin-control__boards-buttons-delete-board:hover, .admin-control__users-buttons-edit-user:hover, .admin-control__users-buttons-delete-user:hover{
+    background-color: #116062;   
+    border: 1px solid white;    
+}
+
+
+.admin-control__boards-header-button-add:active, .admin-control__users-header-button-add:active, .admin-control__boards-buttons-delete-board:active, .admin-control__boards-buttons-delete-board:active, .admin-control__users-buttons-edit-user:active, .admin-control__users-buttons-delete-user:active{
+    background-color: #134F5C; 
+    border: 1px solid white;     
+}

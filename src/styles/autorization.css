@@ -1,0 +1,83 @@
+/* Логин ====================================*/
+.app-login{
+    display: flex;
+    position: absolute;
+    min-width: 900px;
+    top: 47%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.login-window{
+    background-color: #0C343D;  
+    color: white;
+    width: 380px;
+    text-align: center;   
+    margin: auto 0;
+}
+
+.login__heading{
+    margin: 0;
+    padding: 40px;
+    font-family: Roboto_bold;
+}
+
+.login-password__input, .login-username__input{
+    width: 292px;
+    height: 34px;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    font-size: 14pt;
+}
+
+.login-password__label, .login-username__label{
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.login__result-login-message{
+    height: 70px;    
+    width: 320px;
+    margin: 5px auto;
+}
+
+.login__button-enter{
+    background-color: #134F5C;  
+    color: white;
+    border: 1px solid gray;  
+    width: 300px;
+    height: 40px;
+    font-size: 14pt;
+    border-radius: 3px;
+}
+
+.login__button-enter:hover{
+    background-color: #116062;    
+    border: 1px solid white;    
+}
+
+.login__button-enter:active{
+    background-color: #0C343D; 
+  
+}
+
+.logo{
+    padding-left: 50px;
+    padding-top: 35px
+}
+
+.logo__name{
+    font-family: Roboto_bold;  
+    font-size: 20pt;  
+}
+
+.logo__about{
+    font-size: 14pt;
+    padding-left: 10px;
+
+}
+
+.logo__name, .logo__about{
+    margin: 0;    
+    color: #0C343D;
+}

@@ -1,0 +1,56 @@
+*{
+    user-select: none;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.board-select{
+    background-color: #0C343D;  
+    color: white;
+    width: 25%;
+}
+
+.board-select-list__board {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.board-select-list__board:last-child {
+    border-bottom: 2px solid gray;
+}
+
+.board-select-list__board:first-child {
+    border-top: 2px solid gray;
+}
+
+.board-select-list__board:hover {
+    border-color: white;
+}
+
+.board-select-list__board_active_true{
+    background-color: #134F5C;  
+}
+
+
+.board-select-list__board-name{
+    font-family: Roboto_bold;    
+    font-size: 16pt;
+}
+
+.board-select-list__board-address{
+    font-family: Roboto_light_italic;   
+}
+
+.big-message{
+    font-size: 16pt;
+    padding: 10px;
+}

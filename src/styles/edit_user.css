@@ -1,0 +1,149 @@
+.app-edit-user{
+    /* display: flex; */
+    height: calc(100vh - 94px);
+    background-color: #134F5C;
+    color: white;
+    font-family: Roboto;
+    font-size: 14pt;
+}
+
+/* ШРИФТ ТАБЛИЦЫ КАК ПОМЕНЯТЬ */
+/* table{
+    font-family: Roboto;
+    font-size: 14pt;    
+} */
+
+.app-edit-user__heading{
+    font-family: Roboto_bold;    
+    font-size: 16pt;
+}
+
+.app-edit-user-authorization-data, .app-edit-user-name-info-data, .app-edit-user__last-block{
+    display: flex;
+}
+
+.app-edit-user-controled-board-table, .app-edit-user-input-field__input, .app-edit-user-input-field__input-date{
+    font-family: Roboto;
+    font-size: 14pt;
+}
+
+.app-edit-user{
+    position:relative;
+}
+
+/* Ширина */
+.app-edit-user-authorization, .app-edit-user-name-info, .app-edit-user__heading, .app-edit-user__last-block{
+    /* width: 950px; */
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+.app-edit-user__heading{
+    padding-top: 35px;
+}
+
+.app-edit-user-input-field{
+    text-align: center;
+    /* автоматическое растояние между объектами */
+    margin:auto; 
+}
+
+.app-edit-user-input-field:first-child{
+    margin-left: 0;
+}
+
+.app-edit-user-input-field:last-child{
+    margin-right: 0;
+}
+
+.app-edit-user-buttons{
+    margin-left:auto;  
+}
+
+.app-edit-user__last-block{
+    margin-top: 10px;
+}
+
+.app-edit-user-buttons{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: end;
+}
+
+.app-edit-user-controled-board-table__board-name{
+    width: 550px;
+    text-align: left;
+}
+
+.app-edit-user-controled-board{
+    overflow-y: scroll;
+    max-height: 250px;
+}
+
+.app-edit-user-controled-board-table__heading{
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -=- КНОПКИ -=- */
+.app-edit-user-buttons__button{
+    /* background-color: #134F5C;   */
+    background-color: #0C343D; 
+    color: white;
+    border: 1px solid gray;  
+    width: 200px;
+    height: 40px;
+    font-size: 14pt;
+    border-radius: 3px;
+    display: block;
+
+    margin-top:20px
+
+    /* margin: 15px auto; */
+    /* position: absolute; */
+    /* bottom: 8px;
+    transform: translate(-50%,0);
+    left: 50%; */
+}
+
+.app-edit-user-buttons__button-close{
+    background-color: #0C343D;  
+    color: white;
+    border: 1px solid gray;  
+    font-size: 14pt;
+    border-radius: 3px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+}
+
+.app-edit-user-buttons__button:hover, .app-edit-user-buttons__button-close:hover{
+    background-color: #116062;   
+    border: 1px solid white;    
+}
+
+.app-edit-user-buttons__button:active, .app-edit-user-buttons__button-close:active{
+    background-color: #134F5C;
+    border: 1px solid white;     
+}

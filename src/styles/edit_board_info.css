@@ -1,0 +1,158 @@
+.app-edit-board-info{
+    /* display: flex; */
+    height: calc(100vh - 94px);
+    background-color: #134F5C;
+    color: white;
+    font-family: Roboto;
+    font-size: 14pt;
+    position: relative;
+}
+
+.app-edit-board-info__heading{
+    font-family: Roboto_bold;    
+    font-size: 16pt;
+    padding-top: 35px;
+}
+
+.app-edit-board-info__button-list{
+    padding-top: 80px;    
+}
+
+.app-edit-board-info-input-field__input{
+    font-size: 14pt;
+}
+
+.app-edit-board-info__flex, .app-edit-board-info__button-list{
+    display: flex;
+}
+
+.app-edit-board-info__name-and-link, .app-edit-board-info__address,.app-edit-board-info__button-list{
+    /* width: 950px; */
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+    /* width: 950px; */
+.app-edit-board-info-input-field{
+    margin-top:15px;
+}
+
+.app-edit-board-info-input-field__label{
+    margin-bottom:5px;
+}
+
+
+
+.app-edit-board-info-input-field{
+    margin-right: auto;
+    text-align: center;
+}
+
+/* .app-edit-board-info-input-field:first-child{
+    margin-left: 0;
+} */
+
+.app-edit-board-info-input-field:last-child{
+    margin-right: 0;
+}
+
+.app-edit-board-info-input-field__input_one-one-string{
+    width: 100%;
+    font-size: 14pt;
+}
+
+.invisible_element{
+    font-size: 14pt;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -=- КНОПКИ -=- */
+.app-edit-board-info__button{
+    /* background-color: #134F5C;   */
+    background-color: #0C343D; 
+    color: white;
+    border: 1px solid gray;  
+    width: 200px;
+    height: 40px;
+    font-size: 14pt;
+    border-radius: 3px;
+    display: block;
+
+    /* margin-top:20px */
+
+    /* margin: 15px auto; */
+    /* position: absolute; */
+    /* bottom: 8px;
+    transform: translate(-50%,0);
+    left: 50%; */
+}
+
+.app-edit-board-info__button:first-child{
+    margin-right: auto;
+}
+
+.app-edit-board-info-buttons__button-close{
+    background-color: #0C343D;  
+    color: white;
+    border: 1px solid gray;  
+    font-size: 14pt;
+    border-radius: 3px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+}
+
+.app-edit-board-info__button:hover, .app-edit-board-info-buttons__button-close:hover{
+    background-color: #116062;   
+    border: 1px solid white;    
+}
+
+.app-edit-board-info__button:active, .app-edit-board-info-buttons__button-close:active{
+    background-color: #134F5C;
+    border: 1px solid white;     
+}

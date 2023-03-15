@@ -1,0 +1,56 @@
+*{
+    user-select: none;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.app-arm-admin-system__select_list{
+    background-color: #0C343D;  
+    color: white;
+    width: 20%; 
+    min-width: 180px;
+    /* было 25% */
+}
+
+.app-arm-admin-system__one-of-list {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.app-arm-admin-system__one-of-list:last-child {
+    border-bottom: 2px solid gray;
+}
+
+.app-arm-admin-system__one-of-list:first-child {
+    border-top: 2px solid gray;
+}
+
+.app-arm-admin-system__one-of-list:hover {
+    border-color: white;
+}
+
+.app-arm-admin-system__one-of-list-active_true{
+    background-color: #134F5C;  
+}
+
+.app-arm-admin-system__one-of-list{
+    font-family: Roboto_bold;    
+    font-size: 16pt;
+}
+
+
+
+.app-arm-admin-system{
+    display: flex;
+    height: calc(100vh - 94px);
+    background-color: #134F5C;
+}

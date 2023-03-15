@@ -1,0 +1,6 @@
+.app-arm-admin-board{
+    display: flex;
+    height: calc(100vh - 94px);
+    background-color: #134F5C;
+}
+
