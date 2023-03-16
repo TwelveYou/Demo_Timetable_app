@@ -1,3 +1,7 @@
+For searching this demo-application, you need to use the following accounts:
+- «admin» with password «admin»,
+- «user1» with password «qwe123».
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
